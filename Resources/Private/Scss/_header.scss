@@ -1,0 +1,17 @@
+// -------------- Elements inside the header area -------------- //
+
+// -- Navigation -- //
+
+.navbar {
+	@include border-radius(0px);
+	margin-bottom: 0px;
+
+	.container .navbar-brand {
+		margin: 0px;
+		padding: 13px 25px 0px 0px;
+
+		img {
+			max-height: 30px;
+		}
+	}
+}

@@ -1,0 +1,14 @@
+body, html {
+	height: 100%;
+}
+
+.full-height {
+	height: auto;
+	margin-bottom: -160px;
+	min-height: 100%;
+}
+
+.push,
+footer {
+	min-height: 160px;
+}

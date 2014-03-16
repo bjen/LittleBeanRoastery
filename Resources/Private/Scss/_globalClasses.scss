@@ -1,0 +1,87 @@
+// -------------- Global used simple classes -------------- //
+
+.brown-bg {
+	background: $brown;
+	color: $beige-light;
+}
+
+.beige-bg {
+	background: $beige-lighter;
+	border-top: 3px solid $beige-middle;
+
+	.btn {
+		background: darken($beige-middle, 8%);
+		border-color: darken($beige-middle, 8%);
+
+		&:hover,
+		&:focus,
+		&:active {
+			background: darken($beige-middle, 16%);
+			border-color: darken($beige-middle, 16%);
+		}
+	}
+}
+
+.centered {
+	text-align: center;
+}
+
+section,
+footer {
+	padding: 50px 0px 50px 0px;
+}
+
+section {
+	&.no-padding-top {
+		padding-top: 0px;
+	}
+
+	&.no-padding {
+		padding: 0px;
+	}
+}
+
+.keyvisual {
+	background-repeat: no-repeat;
+	background-position: 50% top;
+	height: 250px;
+	width: 100%;
+	overflow: hidden;
+	background-image: url(../Images/header-home.jpg);
+	background-size: 100%;
+}
+
+.type-icon {
+	font-size: 55px;
+	display: inline-block;
+	width: 100%;
+}
+
+.social {
+	width: 100%;
+	text-align: center;
+
+	li {
+		list-style: none;
+		font-size: 40px;
+		display: inline-block;
+		margin-right: 10px;
+
+		span {
+			display: inline-block;
+			text-indent: -9999px;
+		}
+
+	}
+
+	a {
+		color: $beige-light;
+		text-decoration: none;
+
+		&:hover,
+		&:focus,
+		&:active {
+			opacity: 0.8;
+		}
+	}
+}
