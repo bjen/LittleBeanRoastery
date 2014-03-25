@@ -1,0 +1,52 @@
+.carousel-indicators {
+	bottom: -50px;
+}
+
+.carousel-caption {
+	bottom: auto;
+	top: 0px;
+	left: 5%;
+	right: auto;
+	width: auto;
+	text-align: left;
+	@include text-shadow(0 0 0 transparent);
+
+	@media (min-width: $screen-sm-min) {
+		max-width: 200px;
+		top: 5%;
+	}
+
+	* {
+		display: inline;
+		background: $beige-middle;
+		color: $lightest;
+		line-height: 30px;
+		text-align: left;
+		padding-bottom: 3px;
+		font-size: 20px;
+		padding: 2px 5px;
+
+		@media (min-width: $screen-sm-min) {
+			line-height: 51px;
+			font-size: 40px;
+			padding: 0px;
+		}
+	}
+}
+
+.carousel-inner {
+	img {
+		min-width: 100%;
+	}
+
+	a {
+		&:hover,
+		&:focus {
+			.carousel-caption {
+				* {
+					background: $beige;
+				}
+			}
+		}
+	}
+}

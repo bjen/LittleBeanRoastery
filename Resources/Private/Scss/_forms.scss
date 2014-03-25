@@ -4,4 +4,37 @@
 	padding: 10px 18px;
 	border-radius: 0px;
 	margin-top: 1em;
+
+	&:focus,
+	&:hover {
+		outline: 0;
+	}
+}
+
+legend {
+	@extend h1;
+}
+
+label {
+	font-weight: 300;
+}
+
+.form-control {
+	font-weight: 300;
+	border: 1px solid $beige;
+	@include box-shadow(0px 0px 0px transparent inset);
+
+	&:focus,
+	&:hover {
+		border: 1px solid $beige-dark;
+		outline: 0;
+	}
+}
+
+.form-navigation {
+	ul {
+		list-style: none;
+		margin: 0px;
+		padding: 0px;
+	}
 }

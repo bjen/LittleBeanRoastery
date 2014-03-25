@@ -7,7 +7,6 @@
 
 .beige-bg {
 	background: $beige-lighter;
-	border-top: 3px solid $beige-middle;
 
 	.btn {
 		background: darken($beige-middle, 8%);
@@ -22,8 +21,47 @@
 	}
 }
 
+.border-top {
+	border-top: 3px solid $beige-middle;
+}
+
+.border-top-simple {
+	border-top: 1px solid $beige-dark;
+}
+
+.border-bottom {
+	border-bottom: 3px solid $beige-middle;
+}
+
+.back {
+	margin-top: 2.5em;
+	display: block;
+	text-decoratio: none;
+
+	&:hover,
+	&:focus {
+		text-decoration: none;
+	}
+
+	&:before {
+		@extend [class^="icon-"]:before;
+		@extend .icon-angle-left:before;
+		padding-right: 10px;
+		line-height: $line-height-base;
+		text-decoration: none;
+	}
+}
+
 .centered {
 	text-align: center;
+}
+
+.breadcrumb {
+	@extend .col-sm-12;
+	margin-bottom: 0px;
+	background: transparent;
+	padding-top: 8px;
+	padding-bottom: 8px;
 }
 
 section,
@@ -83,5 +121,42 @@ section {
 		&:active {
 			opacity: 0.8;
 		}
+	}
+}
+
+.image-gallery {
+	@extend .row;
+	overflow: hidden;
+
+	figure {
+		@extend .col-sm-4;
+		margin-top: 2em;
+	}
+}
+
+#map_canvas {
+	width: 500px;
+	height: 400px;
+	background-color: #CCC;
+}
+
+.video-youtube {
+	position: relative;
+	padding-bottom: 75%;
+	height: 0;
+	overflow: hidden;
+	margin-bottom: 35px;
+	margin-top: 2em;
+
+	@media (min-width: $screen-md-min) {
+		margin-top: 0;
+	}
+
+	iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
 	}
 }

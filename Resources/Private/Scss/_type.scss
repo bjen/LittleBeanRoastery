@@ -24,6 +24,11 @@ p {
 // Emphasis & misc
 // -------------------------
 
+strong,
+b {
+	font-weight: 400;
+}
+
 // Ex: 14px base font * 85% = about 12px
 small,
 .small  { font-size: 85%; }
@@ -93,7 +98,7 @@ h1, h2, h3, h4, h5, h6,
 h1,
 h2,
 h3 {
-	margin-top: $line-height-computed;
+	margin-top: 0px;
 	margin-bottom: ($line-height-computed / 2);
 
 	small,
@@ -104,7 +109,7 @@ h3 {
 h4,
 h5,
 h6 {
-	margin-top: ($line-height-computed / 2);
+	margin-top: 0px;
 	margin-bottom: ($line-height-computed / 2);
 
 	small,
@@ -224,21 +229,26 @@ abbr.initialism {
 blockquote {
 	padding: ($line-height-computed / 2) $line-height-computed;
 	margin: 0 0 $line-height-computed;
-	border-left: 5px solid $blockquote-border-color;
+	border-left: 3px solid $blockquote-border-color;
+	font-weight: 300;
+	font-style: italic;
+
 	p {
 		font-size: ($font-size-base * 1.25);
-		font-weight: 300;
 		line-height: 1.25;
 	}
 	p:last-child {
 		margin-bottom: 0;
 	}
-	small {
+	footer {
 		display: block;
 		line-height: $line-height-base;
 		color: $blockquote-small-color;
+		padding: 0px;
+		min-height: 0;
+
 		&:before {
-			content: '\2014 \00A0'; // EM DASH, NBSP
+			content: '\2014 \00A0 \00A0'; // EM DASH, NBSP
 		}
 	}
 

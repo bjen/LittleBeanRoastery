@@ -1,0 +1,9 @@
+.col-xs-12 {
+	& + .col-xs-12 {
+		margin-top: 2em;
+
+		@media (min-width: $screen-sm-min) {
+			margin-top: 0px;
+		}
+	}
+}

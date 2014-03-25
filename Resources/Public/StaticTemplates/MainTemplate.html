@@ -22,25 +22,25 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<a href="../" class="navbar-brand">
+						<a href="MainTemplate.html" class="navbar-brand">
 							<img src="../Images/logo-01.svg" alt="">
 						</a>
 					</div>
 					<nav class="collapse navbar-collapse" role="navigation">
 						<ul class="nav navbar-nav">
 							<li class="active">
-								<a href="../css">Home</a>
+								<a href="MainTemplate.html">Home</a>
 							</li>
 							<li>
-								<a href="/coffee">Coffee</a>
+								<a href="CoffeeBlog.html">Coffee Blog</a>
 							</li>
 							<li>
-								<a href="/contact">Contact</a>
+								<a href="Contact.html">Contact</a>
 							</li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
 							<li>
-								<a href="../about">About</a>
+								<a href="About.html">About</a>
 							</li>
 						</ul>
 					</nav>
@@ -76,8 +76,8 @@
 					</div>
 				</section>
 
-				<section class="beige-bg centered">
-					<div class="container" role="main">
+				<section class="beige-bg centered border-top">
+					<div class="container">
 						<div class="row">
 							<div class="col-sm-6">
 								<span class="icon-lab type-icon"></span>
@@ -92,6 +92,37 @@
 								<p><a class="btn btn-default" href="#">Details about our one tea leaf</a></p>
 							</div>
 						</div>
+					</div>
+				</section>
+
+				<section class="white no-padding">
+					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+						<div class="carousel-inner">
+							<div class="item active">
+								<a href="BlogArticle1.html">
+									<img src="../Images/blogarticle-1-big.jpg" alt="">
+									<div class="carousel-caption">
+										<h3>A first blog article</h3>
+									</div>
+								</a>
+							</div>
+							<div class="item">
+								<a href="BlogArticle2.html">
+									<img src="../Images/blogarticle-2-big.jpg" alt="">
+									<div class="carousel-caption">
+										<h3>Yet another blog article</h3>
+									</div>
+								</a>
+							</div>
+						</div>
+
+						<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left"></span>
+						</a>
+						<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right"></span>
+						</a>
 					</div>
 				</section>
 			</div>
@@ -119,7 +150,9 @@
 			</div>
 		</footer>
 
-	<!-- important scripts -->
-	<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
+		<!-- important scripts -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="../Scripts/Vendor/Bootstrap/transition.js"></script>
+		<script src="../Scripts/Vendor/Bootstrap/carousel.js"></script>
 	</body>
 </html>
